@@ -15,9 +15,12 @@ import productImage3 from '../image/siyahelbise.jpg';
 import NewproductImage1 from '../image/siyahelbise.jpg';
 import NewproductImage2 from '../image/kirmizielbise.jpg';
 import NewproductImage3 from '../image/pictures.png';
-import NewproductImage4 from '../image/kirmizielbise.jpg';
-import NewproductImage5 from '../image/siyahelbise.jpg';
-import NewproductImage6 from '../image/pictures.png';
+import shirtProductImage4 from '../image/images4.jpg';
+import shirtProductImage5 from '../image/images5.jpg';
+import shirtProductImage6 from '../image/images6.jpg';
+import shirtProductImage1 from '../image/images1.jpg';
+import shirtProductImage2 from '../image/images2.jpg';
+import shirtProductImage3 from '../image/images3.jpg';
 
 const HomePage = () => {
 
@@ -25,14 +28,17 @@ const HomePage = () => {
     { id: 1, image: productImage1, alt: 'Ürün Adı', link: '#' },
     { id: 2, image: productImage2, alt: 'Ürün Adı', link: '#' },
     { id: 3, image: productImage3, alt: 'Ürün Adı', link: '#' },
+    { id: 4, image: shirtProductImage1, alt: 'Ürün Adı', link: '#' },
+    { id: 5, image: shirtProductImage2, alt: 'Ürün Adı', link: '#' },
+    { id: 6, image: shirtProductImage3, alt: 'Ürün Adı', link: '#' },
 ];
   const newProducts = [
     { id: 1, name: "Ürün Adı", image: NewproductImage1, alt: 'Ürün Adı', link: '#' },
     { id: 2, name: "Ürün Adı", image: NewproductImage2, alt: 'Ürün Adı', link: '#' },
     { id: 3, name: "Ürün Adı", image: NewproductImage3, alt: 'Ürün Adı', link: '#' },
-    { id: 4, name: "Ürün Adı", image: NewproductImage4, alt: 'Ürün Adı', link: '#' },
-    { id: 5, name: "Ürün Adı", image: NewproductImage5, alt: 'Ürün Adı', link: '#' },
-    { id: 6, name: "Ürün Adı", image: NewproductImage6, alt: 'Ürün Adı', link: '#' },
+    { id: 4, name: "Ürün Adı", image: shirtProductImage4, alt: 'Ürün Adı', link: '#' },
+    { id: 5, name: "Ürün Adı", image: shirtProductImage5, alt: 'Ürün Adı', link: '#' },
+    { id: 6, name: "Ürün Adı", image: shirtProductImage6, alt: 'Ürün Adı', link: '#' },
   ]
  
   const settings = {
