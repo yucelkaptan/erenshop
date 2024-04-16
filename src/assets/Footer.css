@@ -1,0 +1,43 @@
+.footer {
+  width: 100%;
+  padding-top: 50px; 
+  padding-bottom: 50px; 
+  text-align: center; 
+  }
+  
+  .footer h5 {
+    color: #333;
+  }
+  
+  .footer ul li {
+    margin-bottom: 10px; 
+  }
+  
+  .footer ul li a {
+    color: #666; 
+    text-decoration: none; 
+  }
+  
+  .footer ul li a:hover {
+    color: #333; 
+  }
+  
+  .footer-bottom {
+    color: black; 
+    padding: 15px 0; 
+  }
+  
+  @media (max-width: 768px) {
+    .footer ul {
+      text-align: center; 
+    }
+    
+    .footer .row {
+      flex-direction: column; 
+    }
+    
+    .footer .col-md-4 {
+      margin-bottom: 30px; 
+    }
+  }
+  

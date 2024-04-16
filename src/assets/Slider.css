@@ -1,0 +1,79 @@
+/* Slider için temel stiller */
+.slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+    touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  .slick-list {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .slick-slide {
+    float: left;
+    min-height: 1px;
+    display: none;
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  /* Slider düğmeleri */
+  .slick-prev,
+  .slick-next {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    transform: translate(0, -50%);
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    z-index: 1;
+  }
+  
+  .slick-prev {
+    left: 10px;
+  }
+  
+  .slick-next {
+    right: 10px;
+  }
+  
+  .slick-prev:before,
+  .slick-next:before {
+    content: '\2039'; /* Bu karakter ok sembolünü temsil eder */
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+    color: white;
+    opacity: 0.75;
+  }
+  
+  .slick-next:before {
+    content: '\203A'; /* Bu karakter ok sembolünü temsil eder */
+  }
+  
+  .slick-prev:hover,
+  .slick-next:hover {
+    opacity: 1;
+  }
+  .slider-image {
+    width: 100%;
+    height: auto;
+  }
+  
