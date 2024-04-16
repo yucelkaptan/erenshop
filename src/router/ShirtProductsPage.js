@@ -4,22 +4,22 @@ import { Card, Button } from 'react-bootstrap';
 import '../assets/ProductsPage.css';
 
 // IMAGE IMPORTLAR //
-import productImage1 from '../image/pictures.png';
-import productImage2 from '../image/siyahelbise.jpg';
-import productImage3 from '../image/kirmizielbise.jpg';
-import productImage4 from '../image/pictures.png';
-import productImage5 from '../image/siyahelbise.jpg';
-import productImage6 from '../image/kirmizielbise.jpg';
+import shirtProductImage1 from '../image/images1.jpg';
+import shirtProductImage2 from '../image/images2.jpg';
+import shirtProductImage3 from '../image/images3.jpg';
+import shirtProductImage4 from '../image/images4.jpg';
+import shirtProductImage5 from '../image/images5.jpg';
+import shirtProductImage6 from '../image/images6.jpg';
 
-const ProductsPage = () => {
+const ShirtProductsPage = () => {
 
   const products = [
-    { id: 1, name: "Ürün 1", image: productImage1, link: "#" },
-    { id: 2, name: "Ürün 2", image: productImage2, link: "#" },
-    { id: 3, name: "Ürün 3", image: productImage3, link: "#" },
-    { id: 4, name: "Ürün 4", image: productImage4, link: "#" },
-    { id: 5, name: "Ürün 5", image: productImage5, link: "#" },
-    { id: 6, name: "Ürün 6", image: productImage6, link: "#" },
+    { id: 1, name: "Ürün 1", image: shirtProductImage1, link: "#" },
+    { id: 2, name: "Ürün 2", image: shirtProductImage2, link: "#" },
+    { id: 3, name: "Ürün 3", image: shirtProductImage3, link: "#" },
+    { id: 4, name: "Ürün 4", image: shirtProductImage4, link: "#" },
+    { id: 5, name: "Ürün 5", image: shirtProductImage5, link: "#" },
+    { id: 6, name: "Ürün 6", image: shirtProductImage6, link: "#" },
   ];
 
       const handleOrderClick = (link) => {
@@ -46,4 +46,4 @@ const ProductsPage = () => {
   )
 }
 
-export default ProductsPage
+export default ShirtProductsPage

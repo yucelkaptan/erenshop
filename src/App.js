@@ -6,6 +6,7 @@ import HomePage from './router/HomePage';
 import ProductsPage from './router/ProductsPage'; 
 import AboutPage from './router/AboutPage'; 
 import CommunicationPage from './router/CommunicationPage'; 
+import ShirtProductsPage from './router/ShirtProductsPage';
 import './App.css';
 import { useState } from 'react';
 
@@ -37,7 +38,8 @@ const App = () => {
               </a>
               <ul className="dropdown-menu">
               <li>
-                <Link className="dropdown-item" to="/products">Elbiseler</Link>
+                <Link className="dropdown-item" to="/dressproduct">Elbiseler</Link>
+                <Link className="dropdown-item" to="/shirtproduct">Gömlek</Link>
               </li>
             </ul>
         </li>
@@ -55,9 +57,10 @@ const App = () => {
     <div className="container mt-4">
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/products" element={<ProductsPage />} />
+        <Route path="/dressproduct" element={<ProductsPage />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/communication" element={<CommunicationPage />} />
+        <Route path="/shirtproduct" element={<ShirtProductsPage />} />
       </Routes>
     </div>
   </Router>

@@ -1,23 +1,40 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Card } from 'react-bootstrap';
+import { Card, Button } from 'react-bootstrap';
 import '../assets/HomePage.css';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../assets/Slider.css';
+
+
+// IMAGE IMPORTLAR //
 import productImage1 from '../image/pictures.png';
 import productImage2 from '../image/kirmizielbise.jpg';
 import productImage3 from '../image/siyahelbise.jpg';
+import NewproductImage1 from '../image/siyahelbise.jpg';
+import NewproductImage2 from '../image/kirmizielbise.jpg';
+import NewproductImage3 from '../image/pictures.png';
+import NewproductImage4 from '../image/kirmizielbise.jpg';
+import NewproductImage5 from '../image/siyahelbise.jpg';
+import NewproductImage6 from '../image/pictures.png';
 
 const HomePage = () => {
 
   const products = [
-    { id: 1, image: productImage1, alt: 'Ürün 1', link: '#' },
-    { id: 2, image: productImage2, alt: 'Ürün 2', link: '#' },
-    { id: 3, image: productImage3, alt: 'Ürün 3', link: '#' },
+    { id: 1, image: productImage1, alt: 'Ürün Adı', link: '#' },
+    { id: 2, image: productImage2, alt: 'Ürün Adı', link: '#' },
+    { id: 3, image: productImage3, alt: 'Ürün Adı', link: '#' },
 ];
-
+  const newProducts = [
+    { id: 1, name: "Ürün Adı", image: NewproductImage1, alt: 'Ürün Adı', link: '#' },
+    { id: 2, name: "Ürün Adı", image: NewproductImage2, alt: 'Ürün Adı', link: '#' },
+    { id: 3, name: "Ürün Adı", image: NewproductImage3, alt: 'Ürün Adı', link: '#' },
+    { id: 4, name: "Ürün Adı", image: NewproductImage4, alt: 'Ürün Adı', link: '#' },
+    { id: 5, name: "Ürün Adı", image: NewproductImage5, alt: 'Ürün Adı', link: '#' },
+    { id: 6, name: "Ürün Adı", image: NewproductImage6, alt: 'Ürün Adı', link: '#' },
+  ]
+ 
   const settings = {
     dots: true,
     infinite: true,
@@ -26,6 +43,9 @@ const HomePage = () => {
     slidesToScroll: 1
   };
 
+  const handleOrderClick = (link) => {
+    window.location.href = link;
+  };
 
   return (
     <div className="container mt-4">
@@ -38,32 +58,20 @@ const HomePage = () => {
           </div>
         ))}
       </Slider>
-      <Card className='body mt-4 mb-2'>
-        <Card.Body>
-          <Card.Title>Hoşgeldiniz</Card.Title>
-          <br></br>
-          <Card.Text>
-          Burada alışveriş yapmanın keyfini yaşamak için doğru adrestesiniz. 
-          ErenShop olarak, siz değerli müşterilerimize en kaliteli ürünleri sunmayı ve alışveriş deneyiminizi unutulmaz kılmayı amaçlıyoruz.
-          <br/><br/>
-          Bizimle alışveriş yaparken, güvenilirlik ve kaliteye olan bağlılığımızı her adımda hissedeceksiniz. 
-          Geniş ürün yelpazemizde aradığınız her şeyi bulabilir ve en rekabetçi fiyatlarla satın alabilirsiniz.
-          <br/><br/>
-          Müşteri memnuniyeti bizim için her şeyden önemlidir. 
-          Profesyonel ve deneyimli ekibimiz, her zaman size yardımcı olmak için burada. 
-          Siparişinizin her aşamasında destek alabilir ve herhangi bir sorunuzda bizimle iletişime geçebilirsiniz.
-          <br/><br/>
-          Siz değerli müşterilerimize teşekkür ederiz. Bizimle alışveriş yapmayı seçtiğiniz için memnuniyet duyuyoruz. 
-          Unutmayın, ErenShop her zaman en iyisini sunmak için burada!
-          <br/><br/>
-          Keyifli alışverişler dileriz.
-          <br/><br/>
-          Saygılarımızla,
-          <br/><br/>
-          ErenShop Ekibi
-          </Card.Text>
-        </Card.Body>
-      </Card>
+      <div className="row mt-5">
+        {newProducts.map(product => (
+          <div key={product.id} className="col-lg-4 mb-4">
+            <Card className='body'>
+              <Card.Img className= "sizes" variant="top" src={product.image} />
+              <Card.Body>
+                <Card.Title>{product.name}</Card.Title>
+                <br></br>
+                <Button className="btnclick" onClick={() => handleOrderClick(product.link)}>Satın Al</Button>
+              </Card.Body>
+            </Card>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }
