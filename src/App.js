@@ -9,6 +9,7 @@ import CommunicationPage from './router/CommunicationPage';
 import ShirtProductsPage from './router/ShirtProductsPage';
 import './App.css';
 import { useState } from 'react';
+import logo from "./image/Logo.png";
 
 const App = () => {
 
@@ -23,7 +24,9 @@ const App = () => {
     <Router>
     <nav className="navbar navbar-expand-lg bg-body-tertiary changing">
   <div className="container-fluid">
-    <Link to="/" className="navbar-brand">ErenShop</Link>
+  <a href="/" className="navbar-brand">
+        <img src={logo} alt="ErenShop Logo" width={250}/>
+      </a>
     <button className="navbar-toggler" type="button" onClick={toggleMenu}>
       <span className="navbar-toggler-icon"></span>
     </button>
@@ -38,16 +41,16 @@ const App = () => {
               </a>
               <ul className="dropdown-menu">
               <li>
-                <Link className="dropdown-item" to="/dressproduct">Elbiseler</Link>
-                <Link className="dropdown-item" to="/shirtproduct">Gömlek</Link>
+                <Link className="dropdown-item" to="/Elbiseler">Elbiseler</Link>
+                <Link className="dropdown-item" to="/Gomlekler">Gömlek</Link>
               </li>
             </ul>
         </li>
         <li className="nav-item">
-          <Link to="/about" className="nav-link">Hakkımızda</Link>
+          <Link to="/Hakkimizda" className="nav-link">Hakkımızda</Link>
         </li>
         <li className="nav-item">
-          <Link to="/communication" className="nav-link">İletişim</Link>
+          <Link to="/iletişim" className="nav-link">İletişim</Link>
         </li>
       </ul>
     </div>
@@ -57,10 +60,10 @@ const App = () => {
     <div className="container mt-4">
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/dressproduct" element={<ProductsPage />} />
-        <Route path="/about" element={<AboutPage />} />
-        <Route path="/communication" element={<CommunicationPage />} />
-        <Route path="/shirtproduct" element={<ShirtProductsPage />} />
+        <Route path="/Elbiseler" element={<ProductsPage />} />
+        <Route path="/Hakkimizda" element={<AboutPage />} />
+        <Route path="/iletişim" element={<CommunicationPage />} />
+        <Route path="/Gomlekler" element={<ShirtProductsPage />} />
       </Routes>
     </div>
   </Router>

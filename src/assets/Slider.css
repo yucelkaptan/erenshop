@@ -1,4 +1,4 @@
-/* Slider için temel stiller */
+
 .slick-slider {
     position: relative;
     display: block;
@@ -30,7 +30,7 @@
     -webkit-tap-highlight-color: transparent;
   }
   
-  /* Slider düğmeleri */
+  
   .slick-prev,
   .slick-next {
     position: absolute;
@@ -56,7 +56,7 @@
   
   .slick-prev:before,
   .slick-next:before {
-    content: '\2039'; /* Bu karakter ok sembolünü temsil eder */
+    content: '\2039'; 
     font-family: 'slick';
     font-size: 20px;
     line-height: 1;
@@ -65,7 +65,7 @@
   }
   
   .slick-next:before {
-    content: '\203A'; /* Bu karakter ok sembolünü temsil eder */
+    content: '\203A'; 
   }
   
   .slick-prev:hover,
