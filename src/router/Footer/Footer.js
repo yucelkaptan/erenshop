@@ -12,8 +12,8 @@ const Footer = () => {
             <h5>Şirket</h5>
             <ul className="list-unstyled">
               <li><a href="/Hakkimizda">Hakkımızda</a></li>
-              <li><a href="#">Gizlilik Politikası</a></li>
-              <li><a href="#">Kullanım Koşulları</a></li>
+              <li><a href="/gizlilik-politikasi">Gizlilik Politikası</a></li>
+              <li><a href="/kullanim-kosullari">Kullanım Koşulları</a></li>
             </ul>
           </div>
           <div className="col-md-4">

@@ -11,6 +11,8 @@ import ReturnandExchangePage from "./router/ReturnandExchange/ReturnandExchangeP
 import './App.css';
 import { useState } from 'react';
 import logo from "./assets/img/Logo.png"
+import SecurityPolicyPage from './router/SecurityPolicyPage/SecurityPolicyPage';
+import TermsofUsePage from './router/TermsofUsePage/TermsofUsePage';
 
 const App = () => {
 
@@ -66,6 +68,8 @@ const App = () => {
             <Route path="/iletişim" element={<CommunicationPage />} />
             <Route path="/Gomlek" element={<ShirtProductsPage />} />
             <Route path="/iade-degisim" element={<ReturnandExchangePage />} />
+            <Route path="/gizlilik-politikasi" element={<SecurityPolicyPage />} />
+            <Route path="/kullanim-kosullari" element={<TermsofUsePage />} />
           </Routes>
         </div>
       </Router>
