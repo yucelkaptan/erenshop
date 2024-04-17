@@ -1,8 +1,8 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, Button } from 'react-bootstrap';
-import '../assets/ShirtProductsPage.css';
-import { shirtProducts } from '../services/imagesData';
+import '../../assets/css/ProductsPage.css';
+import { shirtProducts } from '../../services/imagesData';
 
 
 const ShirtProductsPage = () => {

@@ -1,9 +1,8 @@
-import React, { useEffect } from 'react'
-import { useLocation } from 'react-router-dom';
+import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, Button } from 'react-bootstrap';
-import '../assets/ProductsPage.css';
-import { dressProducts } from '../services/imagesData';
+import '../../assets/css/ProductsPage.css';
+import { dressProducts } from '../../services/imagesData';
 
 
 

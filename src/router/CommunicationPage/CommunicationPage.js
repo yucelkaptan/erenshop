@@ -1,5 +1,5 @@
 import React from 'react'
-import '../assets//CommunicationPage.css';
+import '../../assets/css/CommunicationPage.css';
 import { Card } from 'react-bootstrap';
 
 const CommunicationPage = () => {

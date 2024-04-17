@@ -1,7 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faTwitter, faInstagram, faShopify } from '@fortawesome/free-brands-svg-icons';
-import '../assets/Footer.css';
+import '../../assets/css/Footer.css';
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="col-md-4">
             <h5>Şirket</h5>
             <ul className="list-unstyled">
-              <li><a href="/about">Hakkımızda</a></li>
+              <li><a href="/Hakkimizda">Hakkımızda</a></li>
               <li><a href="#">Gizlilik Politikası</a></li>
               <li><a href="#">Kullanım Koşulları</a></li>
             </ul>
@@ -19,8 +19,8 @@ const Footer = () => {
           <div className="col-md-4">
             <h5>Müşteri Hizmetleri</h5>
             <ul className="list-unstyled">
-              <li><a href="#">İade ve Değişim</a></li>
-              <li><a href="/communication">Müşteri Desteği</a></li>
+              <li><a href="/iade-degisim">İade ve Değişim</a></li>
+              <li><a href="/iletişim">Müşteri Desteği</a></li>
             </ul>
           </div>
           <div className="col-md-4">

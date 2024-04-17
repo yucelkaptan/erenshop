@@ -30,7 +30,6 @@
     -webkit-tap-highlight-color: transparent;
   }
   
-  
   .slick-prev,
   .slick-next {
     position: absolute;
@@ -76,4 +75,15 @@
     width: 100%;
     height: auto;
   }
+  .slider-image:focus-visible {
+    outline: none;
+  }
+
+  .slick-slide .slider-image {
+    transition: transform 0.5s cubic-bezier(0.25, 0.1, 0.25, 1); 
+}
+
+.slick-slide:hover .slider-image {
+    transform: scale(1.1); 
+}
   
