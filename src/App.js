@@ -41,16 +41,16 @@ const App = () => {
               </a>
               <ul className="dropdown-menu">
               <li>
-                <Link className="dropdown-item" to="/Elbiseler">Elbiseler</Link>
-                <Link className="dropdown-item" to="/Gomlekler">Gömlek</Link>
+                <Link className="dropdown-item" to="/Products">Elbiseler</Link>
+                <Link className="dropdown-item" to="/Products">Gömlek</Link>
               </li>
             </ul>
         </li>
         <li className="nav-item">
-          <Link to="/Hakkimizda" className="nav-link">Hakkımızda</Link>
+          <Link to="/About" className="nav-link">Hakkımızda</Link>
         </li>
         <li className="nav-item">
-          <Link to="/iletişim" className="nav-link">İletişim</Link>
+          <Link to="/Communication" className="nav-link">İletişim</Link>
         </li>
       </ul>
     </div>
@@ -60,10 +60,10 @@ const App = () => {
     <div className="container mt-4">
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/Elbiseler" element={<ProductsPage />} />
-        <Route path="/Hakkimizda" element={<AboutPage />} />
-        <Route path="/iletişim" element={<CommunicationPage />} />
-        <Route path="/Gomlekler" element={<ShirtProductsPage />} />
+        <Route path="/Products" element={<ProductsPage />} />
+        <Route path="/Communication" element={<AboutPage />} />
+        <Route path="/About" element={<CommunicationPage />} />
+        <Route path="/Products" element={<ShirtProductsPage />} />
       </Routes>
     </div>
   </Router>
