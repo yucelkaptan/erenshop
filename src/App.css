@@ -24,27 +24,44 @@
 
   .dropdown-menu {
     background-color: #f8f9fa; 
+    text-decoration: none; /* Alt çizgiyi kaldır */
+    position: relative; /* Göreceli konum */
+    overflow: hidden; /* Taşan içeriği gizle */
   }
   
   .dropdown-item {
     font-size: 1.1rem; 
+    text-decoration: none; 
+    position: relative; 
+    overflow: hidden; 
+  }
+  
+  .dropdown-menu .dropdown-item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+    transition: width 0.3s ease-in-out; 
+    border: 0 0 0 0;
+  }
+
+  .dropdown-menu .dropdown-item:hover::after {
+    width: 100%; 
   }
   
   .dropdown-item:hover {
-    background-color: #e9ecef; 
+    color: #c0c0c0;
   }
 
   .dropdown-item:target{
     background-color: #c0c0c0;
   }
-  
 
   .navbar-toggler {
     border: none; 
-  }
-  
-  .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); /* Navbar toggler ikonu */
   }
 
   .navbar-nav .nav-link {
@@ -60,6 +77,7 @@
     height: 2px;
     background-color: black;
     transition: width 0.3s ease-in-out; 
+    border: 0 0 0 0;
   }
   
   .navbar-nav .nav-link:hover::after {

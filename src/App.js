@@ -39,7 +39,7 @@ const App = () => {
               <Link to="/" className="nav-link active" aria-current="page">Anasayfa</Link>
             </li>
             <li className="nav-item dropdown">
-                  <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <a className="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Ürünler
                   </a>
                   <ul className="dropdown-menu">
@@ -50,10 +50,10 @@ const App = () => {
                 </ul>
             </li>
             <li className="nav-item">
-              <Link to="/Hakkimizda" className="nav-link">Hakkımızda</Link>
+              <Link to="/Hakkimizda" className="nav-link active">Hakkımızda</Link>
             </li>
             <li className="nav-item">
-              <Link to="/iletişim" className="nav-link">İletişim</Link>
+              <Link to="/iletişim" className="nav-link active">İletişim</Link>
             </li>
           </ul>
         </div>
