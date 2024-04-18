@@ -29,7 +29,6 @@ const Footer = () => {
                 <li><a href="#"><FontAwesomeIcon icon={faShopify} /> Shop</a></li>
                 <li><a href="#"><FontAwesomeIcon icon={faInstagram} /> Instagram</a></li>
                 <li><a href="#"><FontAwesomeIcon icon={faFacebook} /> Facebook</a></li>
-                <li><a href="#"><FontAwesomeIcon icon={faTwitter} /> Twitter</a></li>
             </ul>
           </div>
         </div>
