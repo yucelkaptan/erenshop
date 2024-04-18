@@ -38,7 +38,7 @@ const HomePage = () => {
       </Slider>
       <div className="row mt-5">
       {newProducts.map(product => (
-    <div key={product.id} className="col-lg-4 mb-4">
+    <div key={product.id} className="col-lg-3 mb-4">
       <Card className='body'>
         <Card.Img className="sizes" variant="top" src={product.image} />
         <Card.Body>

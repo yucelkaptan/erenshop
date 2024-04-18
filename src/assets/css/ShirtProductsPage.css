@@ -1,5 +1,5 @@
 /* Ana konteyner için stiller */
-.prdBody {
+.shrtBodyCard {
     width: 300px; /* Kart genişliği */
     margin: 20px 10px; /* Kenar boşlukları (üst ve alt 20px, sol ve sağ 10px) */
     border-radius: 8px; /* Köşeleri yumuşat */
@@ -8,12 +8,12 @@
     transition: transform 0.3s ease; /* Dönüş animasyonu */
   }
   
-  .prdBody:hover {
+  .shrtBodyCard:hover {
     transform: translateY(-5px); /* Fare üstüne gelince yukarı doğru kaldırma */
   }
   
   /* Resim için stiller */
-  .prdSizes {
+  .shrtSizes {
     width: 100%; /* Resmin genişliği %100 olacak şekilde ayarlanır */
     height: 400px; /* Resim yüksekliği */
     object-fit: cover; /* Resmi kartın boyutlarına sığdır */
@@ -22,25 +22,25 @@
   }
   
   /* Kart gövdesi için stiller */
-  .prdCardBody {
+  .shrtCardBody {
     padding: 20px; /* İç boşluk */
   }
   
   /* Kart başlığı için stiller */
-  .prdCardTitle {
+  .shrtCardTitle {
     font-size: 18px; /* Başlık boyutu */
     margin-bottom: 10px; /* Alt boşluk */
   }
   
   /* Kart metni için stiller */
-  .prdCardText {
+  .shrtCardText{
     font-size: 16px; /* Metin boyutu */
     color: #666; /* Metin rengi */
     margin-bottom: 15px; /* Alt boşluk */
   }
   
   /* Buton için stiller */
-  .prdBtnClickk {
+  .shrtBtnclick {
     display: block; /* Blok düzeni */
     width: 100%; /* Butonun genişliği %100 olacak şekilde ayarlanır */
     background-color: #d3d3d3; /* Arka plan rengi */
@@ -53,7 +53,7 @@
     transition: background-color 0.3s ease; /* Renk değişim animasyonu */
   }
   
-  .prdBtnClick:hover {
+  .shrtBtnclick:hover {
     background-color: #c0c0c0; /* Üzerine gelince renk değiştir */
   }
   

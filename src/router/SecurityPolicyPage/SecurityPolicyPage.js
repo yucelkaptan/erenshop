@@ -5,7 +5,7 @@ import { Card } from 'react-bootstrap';
 const SecurityPolicyPage = () => {
   return (
     <div className="container mt-4">
-      <Card className='body'>
+      <Card>
         <Card.Body>
           <Card.Title>Gizlilik Politikası</Card.Title>
           <Card.Text>

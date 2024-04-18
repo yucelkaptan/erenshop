@@ -42,6 +42,8 @@ const sliderproducts = [
     { id: 4, name: "Ürün Adı", image: homeProducts4, alt: 'Ürün Adı', link: '#', price: '100' },
     { id: 5, name: "Ürün Adı", image: homeProducts5, alt: 'Ürün Adı', link: '#', price: '100' },
     { id: 6, name: "Ürün Adı", image: homeProducts6, alt: 'Ürün Adı', link: '#', price: '100' },
+    { id: 7, name: "Ürün Adı", image: homeProducts5, alt: 'Ürün Adı', link: '#', price: '100' },
+    { id: 8, name: "Ürün Adı", image: homeProducts6, alt: 'Ürün Adı', link: '#', price: '100' },
   ]
 
   const dressProducts = [
@@ -51,6 +53,8 @@ const sliderproducts = [
     { id: 4, name: "Ürün 4", image: dressProductImage4, link: "#", price: "100" },
     { id: 5, name: "Ürün 5", image: dressProductImage5, link: "#", price: "100" },
     { id: 6, name: "Ürün 6", image: dressProductImage6, link: "#", price: "100" },
+    { id: 7, name: "Ürün 7", image: dressProductImage5, link: "#", price: "100" },
+    { id: 8, name: "Ürün 8", image: dressProductImage6, link: "#", price: "100" },
   ];
   const shirtProducts = [
     { id: 1, name: "Ürün 1", image: shirtProductImage1, link: "#", price: "100" },
@@ -59,6 +63,8 @@ const sliderproducts = [
     { id: 4, name: "Ürün 4", image: shirtProductImage4, link: "#", price: "100" },
     { id: 5, name: "Ürün 5", image: shirtProductImage5, link: "#", price: "100" },
     { id: 6, name: "Ürün 6", image: shirtProductImage6, link: "#", price: "100" },
+    { id: 7, name: "Ürün 7", image: shirtProductImage5, link: "#", price: "100" },
+    { id: 8, name: "Ürün 8", image: shirtProductImage6, link: "#", price: "100" },
   ];
 
   export { sliderproducts, newProducts, dressProducts, shirtProducts };

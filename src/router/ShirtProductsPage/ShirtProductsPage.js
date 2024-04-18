@@ -1,7 +1,7 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, Button } from 'react-bootstrap';
-import '../../assets/css/ProductsPage.css';
+import "../../assets/css/ShirtProductsPage.css";
 import { shirtProducts } from '../../services/imagesData';
 
 
@@ -15,15 +15,15 @@ const ShirtProductsPage = () => {
     <div className="container mt-4">
       <div className="row">
         {shirtProducts.map(product => (
-          <div key={product.id} className="col-lg-4 mb-4">
-            <Card className='body'>
-              <Card.Img className= "sizes" variant="top" src={product.image} />
-              <Card.Body>
-                <Card.Title>{product.name}</Card.Title>
-                <Card.Text>
+          <div key={product.id} className="col-lg-3 mb-4">
+            <Card className='shrtBodyCard'>
+              <Card.Img className= "shrtSizes" variant="top" src={product.image} />
+              <Card.Body className='shrtCardBody'>
+                <Card.Title className='shrtCardTitle'>{product.name}</Card.Title>
+                <Card.Text className='shrtCardText'>
                   Fiyat: {product.price} TL
                 </Card.Text>
-                <Button className="btnclick" onClick={() => handleOrderClick(product.link)}>Satın Al</Button>
+                <Button className="shrtBtnclick" onClick={() => handleOrderClick(product.link)}>Satın Al</Button>
               </Card.Body>
             </Card>
           </div>

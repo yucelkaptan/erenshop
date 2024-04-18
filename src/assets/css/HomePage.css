@@ -1,68 +1,58 @@
+/* Ana konteyner için stiller */
 .body {
-  background-color: #ffffff; 
-  color: black;
+  width: 300px; /* Kart genişliği */
+  margin: 20px 10px; /* Kenar boşlukları (üst ve alt 20px, sol ve sağ 10px) */
+  border-radius: 8px; /* Köşeleri yumuşat */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+  overflow: hidden; /* İçeriği kartın sınırları içinde tut */
+  transition: transform 0.3s ease; /* Dönüş animasyonu */
 }
 
-.btnclick:active {
-  background-color: #c0c0c0 !important; 
-  color: black !important;
-  border: 1px solid #c0c0c0 !important;
+.body:hover {
+  transform: translateY(-5px); /* Fare üstüne gelince yukarı doğru kaldırma */
 }
 
+/* Resim için stiller */
+.sizes {
+  width: 100%; /* Resmin genişliği %100 olacak şekilde ayarlanır */
+  height: 400px; /* Resim yüksekliği */
+  object-fit: cover; /* Resmi kartın boyutlarına sığdır */
+  border-top-left-radius: 8px; /* Sol üst köşeyi yuvarla */
+  border-top-right-radius: 8px; /* Sağ üst köşeyi yuvarla */
+}
+
+/* Kart gövdesi için stiller */
+.card-body {
+  padding: 20px; /* İç boşluk */
+}
+
+/* Kart başlığı için stiller */
+.card-title {
+  font-size: 18px; /* Başlık boyutu */
+  margin-bottom: 10px; /* Alt boşluk */
+}
+
+/* Kart metni için stiller */
+.card-text {
+  font-size: 16px; /* Metin boyutu */
+  color: #666; /* Metin rengi */
+  margin-bottom: 15px; /* Alt boşluk */
+}
+
+/* Buton için stiller */
 .btnclick {
-  width: 100%;
-  background-color: #d3d3d3; 
-  color: black;
-  border: 1px solid #d3d3d3;
+  display: block; /* Blok düzeni */
+  width: 100%; /* Butonun genişliği %100 olacak şekilde ayarlanır */
+  background-color: #d3d3d3; /* Arka plan rengi */
+  color: black; /* Metin rengi */
+  border: none; /* Kenarlık yok */
+  border-radius: 0; /* Köşeleri düz yap */
+  padding: 10px 0; /* Dış boşluk */
+  font-size: 16px; /* Metin boyutu */
+  cursor: pointer; /* İmleci göster */
+  transition: background-color 0.3s ease; /* Renk değişim animasyonu */
 }
 
 .btnclick:hover {
-  background-color: #c0c0c0; 
-  color: black;
-  border: 1px solid #c0c0c0;
-}
-
-.sizes {
-  width: auto;
-  height: auto;
-}
-.card-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2rem;
-  margin-top: 5rem;
-}
-
-
-.card {
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1);
-}
-
-
-.card-img-top {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px;
-}
-
-
-.card-title {
-  font-size: 1.5rem;
-  color: #333;
-  font-weight: bold;
-}
-
-
-.card-text {
-  font-size: 1.2rem;
-  color: #6c757d;
+  background-color: #c0c0c0; /* Üzerine gelince renk değiştir */
 }

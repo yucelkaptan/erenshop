@@ -5,7 +5,7 @@ import { Card } from 'react-bootstrap';
 const TermsofUsePage = () => {
   return (
     <div className="container mt-4">
-      <Card className='body'>
+      <Card>
         <Card.Body>
           <Card.Title>Kullanım Koşulları</Card.Title>
           <Card.Text>
