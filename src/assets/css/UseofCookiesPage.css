@@ -1,0 +1,47 @@
+#cookie-notification {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    width: calc(100% - 40px); /* Sayfanın genişliğini aşacak şekilde genişletme */
+    text-align: center;
+    z-index: 999;
+}
+
+#cookie-notification p {
+    margin-bottom: 15px;
+}
+
+#cookie-notification a {
+    color: #4CAF50;
+    text-decoration: underline;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.accept-button, .reject-button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.accept-button:hover, .reject-button:hover {
+    background-color: #45a049;
+}
