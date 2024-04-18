@@ -1,7 +1,7 @@
 import React from 'react'
+import "../../assets/css/ShirtProductsPage.css";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, Button } from 'react-bootstrap';
-import "../../assets/css/ShirtProductsPage.css";
 import { shirtProducts } from '../../services/imagesData';
 
 
@@ -23,7 +23,7 @@ const ShirtProductsPage = () => {
                 <Card.Text className='shrtCardText'>
                   Fiyat: {product.price} TL
                 </Card.Text>
-                <Button className="shrtBtnclick" onClick={() => handleOrderClick(product.link)}>Satın Al</Button>
+                <Button className="btn-primary" onClick={() => handleOrderClick(product.link)}>Satın Al</Button>
               </Card.Body>
             </Card>
           </div>

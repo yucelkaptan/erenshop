@@ -1,59 +1,65 @@
 /* Ana konteyner için stiller */
 .prdBody {
-    width: 300px; /* Kart genişliği */
-    margin: 20px 10px; /* Kenar boşlukları (üst ve alt 20px, sol ve sağ 10px) */
-    border-radius: 8px; /* Köşeleri yumuşat */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
-    overflow: hidden; /* İçeriği kartın sınırları içinde tut */
-    transition: transform 0.3s ease; /* Dönüş animasyonu */
+    width: 300px; 
+    margin: 20px 10px; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    transition: transform 0.3s ease; 
   }
   
   .prdBody:hover {
-    transform: translateY(-5px); /* Fare üstüne gelince yukarı doğru kaldırma */
+    transform: translateY(-5px); 
   }
   
   /* Resim için stiller */
   .prdSizes {
-    width: 100%; /* Resmin genişliği %100 olacak şekilde ayarlanır */
-    height: 400px; /* Resim yüksekliği */
-    object-fit: cover; /* Resmi kartın boyutlarına sığdır */
-    border-top-left-radius: 8px; /* Sol üst köşeyi yuvarla */
-    border-top-right-radius: 8px; /* Sağ üst köşeyi yuvarla */
+    width: 100%; 
+    height: 400px; 
+    object-fit: cover; 
+    border-top-left-radius: 8px; 
+    border-top-right-radius: 8px;
   }
   
   /* Kart gövdesi için stiller */
   .prdCardBody {
-    padding: 20px; /* İç boşluk */
+    padding: 20px; 
   }
   
   /* Kart başlığı için stiller */
   .prdCardTitle {
-    font-size: 18px; /* Başlık boyutu */
-    margin-bottom: 10px; /* Alt boşluk */
+    font-size: 18px;
+    margin-bottom: 10px; 
   }
   
   /* Kart metni için stiller */
   .prdCardText {
-    font-size: 16px; /* Metin boyutu */
-    color: #666; /* Metin rengi */
-    margin-bottom: 15px; /* Alt boşluk */
+    font-size: 16px; 
+    color: #666; 
+    margin-bottom: 15px; 
   }
   
   /* Buton için stiller */
   .prdBtnClickk {
-    display: block; /* Blok düzeni */
-    width: 100%; /* Butonun genişliği %100 olacak şekilde ayarlanır */
-    background-color: #d3d3d3; /* Arka plan rengi */
-    color: black; /* Metin rengi */
-    border: none; /* Kenarlık yok */
-    border-radius: 0; /* Köşeleri düz yap */
-    padding: 10px 0; /* Dış boşluk */
-    font-size: 16px; /* Metin boyutu */
-    cursor: pointer; /* İmleci göster */
-    transition: background-color 0.3s ease; /* Renk değişim animasyonu */
+    display: block; 
+    width: 100%; 
+    background-color: #d3d3d3; 
+    color: black;
+    border: none; 
+    border-radius: 0; 
+    padding: 10px 0; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
   }
   
   .prdBtnClick:hover {
-    background-color: #c0c0c0; /* Üzerine gelince renk değiştir */
+    background-color: #c0c0c0; 
+  }
+  .prdBtnClick:active{
+    background-color: #c0c0c0 !important; 
+  }
+  .prdBtnClick:target{
+    background-color: #c0c0c0; 
   }
   
