@@ -7,11 +7,11 @@ const UseofCookiesPage = () => {
 
     const acceptCookies = () => {
         setAcceptedCookies(true);
+        setRejectedCookies(false);
     };
 
     const rejectCookies = () => {
         setRejectedCookies(true);
-        window.location.href = 'https://www.google.com';
     };
 
     if (!acceptedCookies && !rejectedCookies) {
@@ -24,8 +24,17 @@ const UseofCookiesPage = () => {
                 </div>
             </div>
         );
+    } else if (rejectedCookies) {
+        return (
+            <div className="overlay">
+                <p>Çerez kullanımını reddettiğiniz için siteye giriş engellendi!</p>
+                <button onClick={acceptCookies} id="accept-button">Kabul Et</button>
+            </div>
+            
+        );
     }
 
+    return null;
 };
 
 export default UseofCookiesPage;
