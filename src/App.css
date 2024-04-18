@@ -24,9 +24,9 @@
 
   .dropdown-menu {
     background-color: #f8f9fa; 
-    text-decoration: none; /* Alt çizgiyi kaldır */
-    position: relative; /* Göreceli konum */
-    overflow: hidden; /* Taşan içeriği gizle */
+    text-decoration: none; 
+    position: relative; 
+    overflow: hidden; 
   }
   
   .dropdown-item {
