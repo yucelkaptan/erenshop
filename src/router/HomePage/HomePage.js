@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, Button } from 'react-bootstrap';
 import Slider from 'react-slick';
@@ -7,6 +7,7 @@ import 'slick-carousel/slick/slick-theme.css';
 import { sliderproducts, newProducts } from '../../services/imagesData';
 import '../../assets/css/HomePage.css';
 import '../../assets/css/Slider.css';
+
 
 
 
@@ -27,6 +28,7 @@ const HomePage = () => {
 
   return (
     <div className="container mt-4">
+      <div className="row mt-5">
       <Slider {...settings}>
         {sliderproducts.map(product => (
           <div key={product.id}>
@@ -36,6 +38,7 @@ const HomePage = () => {
           </div>
         ))}
       </Slider>
+      </div>
       <div className="row mt-5">
       {newProducts.map(product => (
     <div key={product.id} className="col-lg-3 mb-4">

@@ -1,10 +1,10 @@
+
 import sliderProducts1 from '../assets/img/pictures.png';
 import sliderProducts2 from '../assets/img/kirmizielbise.jpg';
 import sliderProducts3 from '../assets/img/siyahelbise.jpg';
 import sliderProducts4 from '../assets/img/kirmizielbise.jpg';
 import sliderProducts5 from '../assets/img/siyahelbise.jpg';
 import sliderProducts6 from '../assets/img/pictures.png';
-
 
 import homeProducts1 from '../assets/img/images4.jpg';
 import homeProducts2 from '../assets/img/images5.jpg';
@@ -26,6 +26,7 @@ import shirtProductImage3 from '../assets/img/images3.jpg';
 import shirtProductImage4 from '../assets/img/images4.jpg';
 import shirtProductImage5 from '../assets/img/images5.jpg';
 import shirtProductImage6 from '../assets/img/images6.jpg';
+
 
 const sliderproducts = [
     { id: 1, image: sliderProducts1, alt: 'Ürün Adı', link: '#'},
