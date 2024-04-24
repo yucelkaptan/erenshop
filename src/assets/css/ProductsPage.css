@@ -62,4 +62,30 @@
   .prdBtnClick:target{
     background-color: #c0c0c0; 
   }
+
+  .prdCategorySelect {
+    display: inline-block;
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s ease;
+    margin-right: 10px;
+  }
+  
+  .prdCategorySelect:focus {
+    border-color: #c0c0c0;
+  }
+  
+  .prdCategorySelect option {
+    background-color: #f8f9fa;
+  }
+  
+  .prdCategoryLabel {
+    font-size: 18px;
+    margin-right: 10px;
+  }
   
